@@ -1,3 +1,4 @@
+import 'package:alreda_app1/features/home/presentation/view/widgets/box_group_name.dart';
 import 'package:alreda_app1/features/home/presentation/view/widgets/drawer_body.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,7 @@ class HomeViewBody extends StatelessWidget {
               padding: EdgeInsets.only(right: 8),
               child: Text(
                 'دورة جامع الرضا',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -42,7 +43,10 @@ class HomeViewBody extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(child: Text('محتوى الصفحة')),
+
+      body: BoxGroupName(),
+
+      // body: Center(child: Text('محتوى الصفحة')),
     );
   }
 }
